@@ -65,5 +65,12 @@ Si prefieres usar Docker para ejecutar la aplicación:
 
     *   La aplicación estará disponible en: `http://localhost:5173`
     *   **Nota Importante:** El sistema cuenta con un login para acceder. Dado que no hay un formulario de registro público, necesitarás crear un usuario inicial.
-    *   Utiliza **Postman** (o similar) para crear un usuario a través de la API del backend.
+    *   Utiliza **Postman** para crear un usuario a través de la API del backend.
     *   Una vez creado el usuario, podrás utilizar esas credenciales en la pantalla de login para ingresar al sistema y generar tus reportes.
+
+
+(**Nota:** Por temas de practicidad se permitio la exposición del archivo .env)
+
+
+**Url en local:** http://127.0.0.1:8000/
+**Url en producción:** http://161.132.45.52:8000/
