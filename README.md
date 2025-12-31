@@ -1,48 +1,69 @@
-# app-report
+# App Report
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto está enfocado en la generación de reportes Excel en base a fechas y su posterior descarga cuando estén listos.
 
-## Recommended IDE Setup
+## Tecnologías Utilizadas
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<p align="left">
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js" /> </a>
+  <a href="https://vitejs.dev/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /> </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> </a>
+  <a href="https://sass-lang.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" alt="Sass" /> </a>
+  <a href="https://router.vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Vue_Router-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" alt="Vue Router" /> </a>
+  <a href="https://axios-http.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/axios-671ddf?style=for-the-badge&logo=axios&logoColor=white" alt="Axios" /> </a>
+  <a href="https://www.npmjs.com/package/vue3-toastify" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Vue3--Toastify-42b883?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue3-Toastify" /> </a>
+  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /> </a>
+</p>
 
-## Recommended Browser Setup
+## Ejecución Local
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Para ejecutar el proyecto de forma local, asegúrate de tener Node.js instalado (versión 20 o superior recomendada).
 
-## Type Support for `.vue` Imports in TS
+1.  **Instalar dependencias:**
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+    ```bash
+    npm install
+    ```
 
-## Customize configuration
+2.  **Correr el servidor de desarrollo:**
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+    ```bash
+    npm run dev
+    ```
 
-## Project Setup
+    La aplicación estará disponible usualmente en `http://localhost:5173`.
 
-```sh
-npm install
-```
+3.  **Construir para producción (opcional):**
 
-### Compile and Hot-Reload for Development
+    ```bash
+    npm run build
+    ```
 
-```sh
-npm run dev
-```
+## Ejecución con Docker Compose
 
-### Type-Check, Compile and Minify for Production
+Si prefieres usar Docker para ejecutar la aplicación:
 
-```sh
-npm run build
-```
+1.  **Construir y levantar el contenedor:**
 
-### Lint with [ESLint](https://eslint.org/)
+    ```bash
+    docker-compose up -d --build
+    ```
 
-```sh
-npm run lint
-```
+2.  **Ver logs (opcional):**
+
+    ```bash
+    docker-compose logs -f
+    ```
+
+3.  **Detener los contenedores:**
+
+    ```bash
+    docker-compose down
+    ```
+
+4.  **Acceso y Uso:**
+
+    *   La aplicación estará disponible en: `http://localhost:5173`
+    *   **Nota Importante:** El sistema cuenta con un login para acceder. Dado que no hay un formulario de registro público, necesitarás crear un usuario inicial.
+    *   Utiliza **Postman** (o similar) para crear un usuario a través de la API del backend.
+    *   Una vez creado el usuario, podrás utilizar esas credenciales en la pantalla de login para ingresar al sistema y generar tus reportes.
