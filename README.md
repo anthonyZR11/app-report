@@ -69,7 +69,7 @@ Si prefieres usar Docker para ejecutar la aplicación:
     *   Una vez creado el usuario, podrás utilizar esas credenciales en la pantalla de login para ingresar al sistema y generar tus reportes.
 
 
-(**Nota:** Por temas de practicidad se permitio la exposición del archivo .env)
+(**Nota:** Para el proyecto en producción recargar la web para refrescar la lista y poder descargar)
 
 
 **Url en local:** http://127.0.0.1:8000/
